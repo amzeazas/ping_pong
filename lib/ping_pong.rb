@@ -4,7 +4,9 @@ class Fixnum
     input = (1..self)
 
     input.each() do |num|
-      if num %3 == 0
+      if num %3 == 0 && num %5 == 0
+        new_array.push("ping-pong!")
+      elsif num %3 == 0
         new_array.push("ping")
       elsif num %5 == 0
         new_array.push("pong")
